@@ -50,7 +50,6 @@ const Navbar = () => {
 
   return (
     <>
-      {/* Centering Container for the Navbar */}
       <div className="fixed top-4 left-0 right-0 z-50 flex justify-center">
         <motion.nav
           initial={{ y: -100, opacity: 0 }}
@@ -62,12 +61,15 @@ const Navbar = () => {
               : 'bg-black/20 border-white/10'
           }`}
         >
-          {/* --- LOGO with Name --- */}
+          {/* --- Logo / Company Name --- */}
           <Link to="/" className="flex items-center gap-3">
-            <img src={logo} alt="Ferrari Foods LLC Logo" className="h-10 w-auto" />
-            <div className="hidden sm:block">
-                {/* --- THIS LINE IS UPDATED --- */}
-                <span className="font-mourich text-2xl text-white block leading-tight tracking-wide">Ferrari Foods LLC</span>
+            {/* Logo: Hidden on mobile (screens smaller than md), visible on desktop */}
+            <img src={logo} alt="Ferrari Foods LLC Logo" className="h-10 w-auto hidden md:block" />
+
+            {/* Company Name & Arabic Name: Always visible */}
+            <div>
+                {/* The `md:text-2xl` makes the font larger on desktop screens to match original design */}
+                <span className="font-mourich text-xl md:text-2xl text-white block leading-tight tracking-wide">Ferrari Foods LLC</span>
                 <span className="text-xs text-white/70 block leading-tight">فيراري فودز ذ.م.م</span>
             </div>
           </Link>

@@ -1,0 +1,35 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@font-face {
+  font-family: 'Sunday';
+  src: url('./fonts/Sunday - Bold.ttf') format('truetype');
+  /* Or use .otf if you prefer that file */
+  /* src: url('./fonts/Sunday - Bold.otf') format('opentype'); */
+  font-weight: bold;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Noken';
+  src: url('./fonts/NokenBold.woff2') format('woff2');
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Rokhald';
+  /* Corrected the path to point to the 'fonts' directory */
+  src: url('./fonts/Rokhald.ttf') format('truetype'),
+       url('./fonts/Rokhald.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* --- UPDATED FONT DEFINITION --- */
+@font-face {
+  font-family: 'Mourich';
+  src: url('./fonts/Mourich Bold.ttf') format('truetype'),
+       url('./fonts/Mourich Bold.otf') format('opentype');
+  font-weight: bold;
+  font-style: normal;
+}
